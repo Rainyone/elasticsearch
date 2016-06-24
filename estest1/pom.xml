@@ -7,6 +7,9 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>estest1 Maven Webapp</name>
 	<url>http://maven.apache.org</url>
+	<properties>
+		<es.version>2.3.3</es.version>
+	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
@@ -19,6 +22,13 @@
 			<groupId>javax.servlet</groupId>
 			<artifactId>servlet-api</artifactId>
 			<version>2.5</version>
+			<scope>true</scope>
+		</dependency>
+		<!-- 添加es -->
+		<dependency>
+			<groupId>org.elasticsearch</groupId>
+			<artifactId>elasticsearch</artifactId>
+			<version>${es.version}</version>
 		</dependency>
 	</dependencies>
 	<build>
